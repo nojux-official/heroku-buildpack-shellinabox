@@ -11,7 +11,7 @@ function topic {
 BP_DIR="$(cd "$(dirname "$0")"/.. && pwd)"
 
 topic Marking to install shellinabox
-echo shellinabox >> $1/Aptfile
+echo -n 'shellinabox ' >> $1/Aptfile
 
 topic Writing shellinabox startup script
 start_script=$1/bin/${SHELLINABOX_WRAPPER_SCRIPT_NAME:-'start_shellinabox.sh'}
